@@ -11,8 +11,8 @@
         <div class="header">QB Packet Reader - Tossups</div>
         <div class="buttons" id="buttons">
             <button class="big-button" id="start">Search for Questions and Start</button>
-            <button class="big-button" id="buzz">Buzz</button>
-            <button class="big-button" id="next">Next</button>
+            <button class="big-button" id="buzz" onclick="buzz()">Buzz</button>
+            <button class="big-button" id="next" onclick="readQuestion()">Next</button>
         </div>
 
         <div class="options" id="options">
@@ -60,7 +60,12 @@
         </div>
     </div>
 
-    <script src="/static/tossups.js"></script>
+    <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+    <script src="/static/tossups.js" type="text/babel"></script>
 </body>
 
 </html>
